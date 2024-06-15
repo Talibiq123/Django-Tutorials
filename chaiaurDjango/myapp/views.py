@@ -10,3 +10,7 @@ def all_myapp(request):
 def chai_detail(request, chai_id):
   chai = get_object_or_404(ChaiVarity, pk=chai_id)
   return render(request, 'myapp/chai_detail.html', {'chai': chai})
+
+
+def chai_store_view(request):
+  return render(request, 'myapp/chai_stores.html')
