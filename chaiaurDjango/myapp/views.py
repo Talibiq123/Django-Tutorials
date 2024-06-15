@@ -14,3 +14,4 @@ def chai_detail(request, chai_id):
 
 def chai_store_view(request):
   return render(request, 'myapp/chai_stores.html')
+
